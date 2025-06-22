@@ -1,4 +1,4 @@
-# solarfarmers.com
+cd 路徑/solarfarmers-website
 git init
 git remote add origin https://github.com/herbert0220/solarfarmers.com.git
 git add .
