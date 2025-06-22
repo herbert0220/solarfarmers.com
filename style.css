@@ -1,7 +1,2 @@
-
-body { font-family: sans-serif; background: #f2fef5; color: #333; margin: 0; padding: 0; }
-header { background: #03A67B; color: white; padding: 20px; text-align: center; }
-main { padding: 20px; max-width: 800px; margin: auto; }
-section { background: white; margin-bottom: 20px; padding: 15px; border-radius: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
-h2 { color: #034638; }
-footer { text-align: center; padding: 10px; color: #777; font-size: 0.9em; }
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>solarfarmer-static</BucketName><RequestId>KTQ880ECKPSP2A67</RequestId><HostId>i/M3x6OOFbRxhoMH4iMmOhLcpLq02OsFxLboVDA5zLtC+LXAN0C9JrTBBmhRiZBIbdgGhpIuFEgEvlU8W2yES0+yTp9OsmL+eeILO7Tu4L8=</HostId></Error>
