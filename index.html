@@ -3,27 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>小農綠電 - solarfarmers.com</title>
+<title>小農綠電 - 你最佳的綠能規劃師</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<h1>小農綠電</h1>
-<p>你最佳的綠能規劃師｜農地整合、太陽能、地熱、微電網、風電 專業團隊</p>
-<nav>
-  <a href="#about">關於我們</a>
-  <a href="#cases">實績案例</a>
-  <a href="#geothermal">台東地熱</a>
-  <a href="#vietnam">越南光電</a>
-  <a href="#news">最新消息</a>
-  <a href="#team">核心團隊</a>
-  <a href="#contact">聯絡我們</a>
-</nav>
+
+<!-- 導覽列 -->
+<header class="navbar">
+  <div class="logo">
+    <img src="assets/photos/logo.png" alt="小農綠電 Logo" height="40">
+  </div>
+  <nav>
+    <a href="#about">關於我們</a>
+    <a href="#geothermal">台東地熱</a>
+    <a href="#vietnam">越南光電</a>
+    <a href="#cases">實績案例</a>
+    <a href="#team">核心團隊</a>
+    <a href="#contact">聯絡我們</a>
+  </nav>
 </header>
+
+<!-- 首屏大視覺 -->
+<section class="hero">
+  <h1>農地整合 × 在地能源 × 公益共享</h1>
+  <h2>小農綠電 - 你最佳的綠能規劃師</h2>
+  <div class="buttons">
+    <a href="#contact" class="btn">立即聯絡</a>
+    <a href="#about" class="btn secondary">瞭解更多</a>
+  </div>
+</section>
 
 <main>
 
-<section id="about">
+<!-- 關於我們 -->
+<section id="about" class="content">
 <h2>關於我們</h2>
 <p>小農綠電有限公司（統編 93780282）致力於整合小農、農地、漁電、地熱、光電方案，推動農村永續與能源轉型。</p>
 <p>總經理：黃俊瑋（Herbert Huang）</p>
@@ -36,7 +49,22 @@
 <img src="assets/photos/about.jpg" width="100%" alt="關於我們">
 </section>
 
-<section id="cases">
+<!-- 地熱案場 -->
+<section id="geothermal" class="content">
+<h2>台東地熱公民電廠</h2>
+<p>金峰嘉蘭地熱井溫204.7°C，預估6MW潛力，首階段2MW，開放集資，部落優先分潤。</p>
+<img src="assets/photos/geothermal.jpg" width="100%" alt="地熱案場">
+</section>
+
+<!-- 越南光電 -->
+<section id="vietnam" class="content">
+<h2>越南光電計畫</h2>
+<p>與明越投資合作，拓展越南光儲能市場，打造台灣小農經驗輸出典範。</p>
+<img src="assets/photos/vietnam.jpg" width="100%" alt="越南合作">
+</section>
+
+<!-- 實績案例 -->
+<section id="cases" class="content">
 <h2>實績案例</h2>
 <ul>
 <li>2022 台中坤悅均品社區 光儲微電網</li>
@@ -46,30 +74,14 @@
 <li>2023 高雄燁聯 E棟 2.6MW 完工案</li>
 <li>2024 高雄燁聯 I棟 2.4MW 完工案</li>
 <li>2024 彰茂鹿港 499kW 太陽能施工</li>
-<li>2025 台中光電示範案場 660kW </li>
+<li>2025 台中光電示範案場 660kW</li>
 </ul>
 <p>累計統包/規劃量：約8950 kWh</p>
 <img src="assets/photos/case.jpg" width="100%" alt="案例實景">
 </section>
 
-<section id="geothermal">
-<h2>台東地熱公民電廠</h2>
-<p>金峰嘉蘭地熱井溫204.7°C，預估6MW潛力，首階段2MW，開放集資，部落優先分潤。</p>
-<img src="assets/photos/geothermal.jpg" width="100%" alt="地熱案場">
-</section>
-
-<section id="vietnam">
-<h2>越南光電計畫</h2>
-<p>與明越投資合作，拓展越南光儲能市場，打造台灣小農經驗輸出典範。</p>
-<img src="assets/photos/vietnam.jpg" width="100%" alt="越南合作">
-</section>
-
-<section id="news">
-<h2>最新消息</h2>
-<p>第二期地熱集資即將開放，敬請關注 solarfarmers.com。</p>
-</section>
-
-<section id="team">
+<!-- 核心團隊 -->
+<section id="team" class="content">
 <h2>核心團隊</h2>
 <ul>
 <li>昌師：35年鋼構土木經驗</li>
@@ -78,11 +90,12 @@
 <li>阿翔：人力調度與監工負責</li>
 <li>阿勇：國家乙級電匠專業</li>
 <li>阿英：人力派遣與後勤協調</li>
-<img src="assets/photos/team.jpg" width="100%" alt="team">
 </ul>
+<img src="assets/photos/team.jpg" width="100%" alt="團隊合照">
 </section>
 
-<section id="contact">
+<!-- 聯絡我們 -->
+<section id="contact" class="content">
 <h2>聯絡我們</h2>
 <p>Email: snake19820220@gmail.com</p>
 </section>
@@ -92,5 +105,6 @@
 <footer>
 <p>&copy; 2025 小農綠電 solarfarmers.com</p>
 </footer>
+
 </body>
 </html>

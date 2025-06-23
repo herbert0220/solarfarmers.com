@@ -1,9 +1,80 @@
-body { font-family: sans-serif; background: #f2fef5; color: #333; margin: 0; padding: 0; }
-header { background: #03A67B; color: white; padding: 20px; text-align: center; }
-nav { background: #E18D00; padding: 10px; text-align: center; position: sticky; top: 0; }
-nav a { margin: 0 10px; color: white; text-decoration: none; font-weight: bold; }
-nav a:hover { text-decoration: underline; }
-main { padding: 20px; max-width: 900px; margin: auto; }
-section { background: white; margin-bottom: 20px; padding: 15px; border-radius: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
-h2 { color: #034638; }
-footer { text-align: center; padding: 15px; font-size: 0.9em; color: #777; }
+/* 基本設定 */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Noto Sans TC', sans-serif; color: #333; background: #f4f7f9; line-height: 1.6; }
+
+/* 導覽列 */
+.navbar {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+.navbar .logo img { height: 40px; }
+.navbar nav a {
+  margin-left: 20px;
+  color: #034638;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar nav a:hover {
+  color: #E18D00;
+  text-decoration: underline;
+}
+
+/* 首屏大視覺 */
+.hero {
+  background: url('assets/photos/hero.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+.hero h1 { font-size: 2.2rem; margin-bottom: 15px; }
+.hero h2 { font-size: 1.4rem; margin-bottom: 25px; }
+.hero .buttons .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 5px;
+  background: #03A67B;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.hero .btn.secondary {
+  background: #E18D00;
+}
+.hero .btn:hover {
+  opacity: 0.85;
+}
+
+/* 區塊內容 */
+.content {
+  background: white;
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+.content h2 {
+  color: #034638;
+  margin-bottom: 15px;
+  border-left: 4px solid #03A67B;
+  padding-left: 10px;
+}
+.content ul li {
+  margin-bottom: 8px;
+}
+
+/* 頁尾 */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  padding: 20px;
+}
