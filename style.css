@@ -1,5 +1,4 @@
-
-body { font-family: sans-serif; background: #f0fef5; color: #333; margin: 0; padding: 0; }
+body { font-family: sans-serif; background: #f2fef5; color: #333; margin: 0; padding: 0; }
 header { background: #03A67B; color: white; padding: 20px; text-align: center; }
 nav { background: #E18D00; padding: 10px; text-align: center; position: sticky; top: 0; }
 nav a { margin: 0 10px; color: white; text-decoration: none; font-weight: bold; }
