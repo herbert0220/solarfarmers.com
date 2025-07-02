@@ -1,1 +1,14 @@
-body { background: #fff; font-family: 'Noto Sans TC'; }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; color: #333; background: #fff; }
+.navbar { background: #f8f8f8; padding: 15px; display: flex; justify-content: space-between; align-items: center; }
+.navbar img { height: 40px; }
+.navbar nav a { margin-left: 20px; color: #034638; text-decoration: none; }
+.navbar nav a:hover { text-decoration: underline; }
+.hero { background: #034638; color: #fff; text-align: center; padding: 100px 20px; }
+section { padding: 40px 20px; max-width: 900px; margin: 0 auto; }
+h2 { color: #034638; margin-bottom: 20px; }
+img { max-width: 100%; height: auto; margin-top: 15px; border-radius: 8px; }
+footer { background: #222; color: #aaa; text-align: center; padding: 20px; font-size: 0.9rem; }
+.floating-contact { position: fixed; bottom: 20px; right: 20px; background: white; border-radius: 50%; width: 60px; height: 60px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; z-index: 2000; }
+.floating-contact img { width: 48px; height: 48px; }
