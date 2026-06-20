@@ -1,209 +1,80 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>晨世能源 × 源能資本 - 聯絡我們</title>
-<style>
-    /* 延續 LOGO 的部落大地色系 CSS 變數 */
-    :root {
-        --primary-dark: #3D2515;   /* 深焦糖褐 */
-        --earth-red: #A84428;      /* 火山紅 */
-        --tribal-gold: #DEAF62;    /* 太陽金黃 */
-        --forest-green: #5B6B4E;   /* 祖靈綠 */
-        --sand-beige: #F1E5CB;     /* 溫潤沙米 */
-        --text-dark: #2B1A0E;
-    }
-
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
-    }
-
-    body {
-        background-color: var(--sand-beige);
-        color: var(--text-dark);
-        line-height: 1.6;
-    }
-
-    /* 導覽列 */
-    .navbar {
-        background-color: var(--primary-dark);
-        padding: 15px 5%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        border-bottom: 4px solid var(--tribal-gold);
-    }
-
-    .navbar .logo img {
-        height: 45px;
-        width: auto;
-        border-radius: 50%;
-    }
-
-    nav a {
-        color: var(--sand-beige);
-        text-decoration: none;
-        margin-left: 20px;
-        font-size: 0.95rem;
-        transition: color 0.3s;
-        padding: 6px 12px;
-    }
-
-    nav a:hover, nav a.active {
-        color: var(--tribal-gold);
-    }
-
-    nav a.active {
-        border-bottom: 2px solid var(--tribal-gold);
-    }
-
-    /* 內文區塊 */
-    .content {
-        max-width: 800px;
-        margin: 40px auto;
-        padding: 30px;
-        background-color: #E6D9BC; /* 微調深沙色底襯托內容 */
-        border: 3px solid var(--primary-dark);
-        border-radius: 12px;
-        box-shadow: 0 6px 0 var(--primary-dark);
-    }
-
-    h1 {
-        color: var(--earth-red);
-        font-size: 2.2rem;
-        margin-bottom: 20px;
-        border-bottom: 3px solid var(--primary-dark);
-        padding-bottom: 10px;
-    }
-
-    h2 {
-        color: var(--primary-dark);
-        font-size: 1.5rem;
-        margin: 35px 0 15px 0;
-    }
-
-    p {
-        font-size: 1.05rem;
-        margin-bottom: 12px;
-    }
-
-    a {
-        color: var(--earth-red);
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    /* 📸 新增：示範廠照片區塊樣式 */
-    .factory-photo-container {
-        width: 100%;
-        margin: 15px 0 30px 0;
-        border: 3px solid var(--primary-dark);
-        border-radius: 8px;
-        overflow: hidden;
-        background-color: var(--sand-beige);
-        box-shadow: 0 4px 0 var(--primary-dark);
-    }
-
-    .factory-photo-container img {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;
-    }
-
-    .factory-photo-caption {
-        padding: 10px;
-        text-align: center;
-        background-color: var(--primary-dark);
-        color: var(--sand-beige);
-        font-size: 0.9rem;
-        font-weight: bold;
-    }
-
-    /* 地圖區塊 */
-    .map-container {
-        border: 3px solid var(--primary-dark);
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 4px 0 var(--primary-dark);
-    }
-
-    /* 頁尾 */
-    footer {
-        background-color: var(--primary-dark);
-        color: var(--sand-beige);
-        text-align: center;
-        padding: 20px 0;
-        font-size: 0.85rem;
-        margin-top: 50px;
-        border-top: 4px solid var(--earth-red);
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晨世能源 - 金峰嘉蘭地熱計畫 × 源能資本</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="navbar">
-  <div class="logo"><img src="logo.png" alt="小農綠電"></div>
-  <nav>
-    <a href="index.html">首頁</a>
-    <a href="about.html">關於我們</a>
-    <a href="solutions.html">整合方案</a>
-    <a href="projects.html">案例實績</a>
-    <a href="geothermal.html">台東地熱</a>
-    <a href="vietnam.html">越南光電</a>
-    <a href="contact.html" class="active">聯絡我們</a>
-  </nav>
-</header>
+    <!-- 頂部深綠色導覽列（完全維持原有配色） -->
+    <header class="navbar">
+        <div class="container navbar-container">
+            <div class="logo-area">
+                <img src="logo.png" alt="晨世能源" class="logo-img">
+            </div>
+            <nav class="nav-links">
+                <a href="#">首頁</a>
+                <a href="#about">關於我們</a>
+                <a href="#solutions">整合方案</a>
+                <a href="#projects">案例實績</a>
+                <a href="#geothermal" class="active">台東地熱</a>
+                <a href="#vietnam">越南光電</a>
+                <a href="#contact">聯絡我們</a>
+            </nav>
+        </div>
+    </header>
 
-<section class="content">
-    <h1>聯絡我們</h1>
+    <!-- 核心形象大圖區（維持原有綠能科技背景圖） -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-main-title">金峰嘉蘭地熱專案 ✕ AI儲能ESG ✕ 公益共享</h1>
+            <p class="hero-sub-title">晨世能源攜手源能資本，打造台東地熱永續轉型</p>
+        </div>
+    </section>
 
-    <p>Email：<a href="mailto:snake19820220@gmail.com">snake19820220@gmail.com</a></p>
-    <p>LINE：<a href="https://line.me/ti/p/EWZJjI94D-" target="_blank">加入LINE洽詢</a></p>
-    <p>Facebook：<a href="https://www.facebook.com/profile.php?id=61578159384034" target="_blank">官方粉絲專頁</a></p>
+    <!-- 核心板塊區（維持原有白底、簡約圖文風格） -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                
+                <!-- 板塊 1：地熱開發 -->
+                <div class="feature-card">
+                    <div class="feature-image-wrapper">
+                        <img src="photo-geothermal.jpg" alt="地熱開發">
+                    </div>
+                    <h3 class="feature-title">地熱開發</h3>
+                    <p class="feature-desc">本土企業 ✕ 尊重在地 ✕ 部落共生</p>
+                </div>
 
-    <h2>小農綠電台中示範廠建構中....</h2>
-    
-    <!-- 📸 新增的照片區塊 -->
-    <div class="factory-photo-container">
-        <!-- 請將下方的 photo-demo-factory.jpg 替換為您實際的照片檔名 -->
-        <img src="photo-demo-factory.jpg" alt="小農綠電台中示範廠完成照片">
-        <div class="factory-photo-caption">▲ 小農綠電台中示範廠・綠能實體展演場域</div>
-    </div>
+                <!-- 板塊 2：源能資本 -->
+                <div class="feature-card">
+                    <div class="feature-image-wrapper">
+                        <img src="photo-investment.jpg" alt="源能資本">
+                    </div>
+                    <h3 class="feature-title">源能資本</h3>
+                    <p class="feature-desc">綠色金融 ✕ 精準投資 ✕ 永續鏈結</p>
+                </div>
 
-    <div class="map-container">
-      <iframe src="https://www.google.com/maps?q=24.115507,120.608191&hl=zh-TW&z=16&output=embed" 
-      width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-</section>
+                <!-- 板塊 3：海外布局 -->
+                <div class="feature-card">
+                    <div class="feature-image-wrapper">
+                        <img src="photo-overseas.jpg" alt="海外布局">
+                    </div>
+                    <h3 class="feature-title">海外布局</h3>
+                    <p class="feature-desc">輸出台灣經驗 ✕ 拓展東協光儲市場</p>
+                </div>
 
-<footer>
-<p>&copy; 2026 小農綠電 & 晨世能源 & 源能資本. All rights reserved.</p>
-</footer>
+            </div>
+        </div>
+    </section>
 
-<!-- Facebook Messenger 插件 -->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" 
-src="https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js"></script>
-
-<div class="fb-customerchat"
-  attribution="setup_tool"
-  page_id="61578159384034"
-  theme_color="#A84428" <!-- 這裡同步調整為 LOGO 的火山紅，使其不與背景衝突 -->
-  logged_in_greeting="您好！歡迎洽詢小農綠電"
-  logged_out_greeting="您好！歡迎洽詢小農綠電">
-</div>
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <p>&copy; 2026 晨世能源股份有限公司 & 源能資本. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
